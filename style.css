@@ -1,0 +1,29 @@
+.container {
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+ 
+    gap: 20px;
+}
+
+
+.container img:hover {
+    width: 200px;
+    border-radius: 80%;
+    transition: 0.5s ease-in-out;
+}
+
+.foto {
+    width: 250px;
+}
+
+.card-itens{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: grey;
+    width: 40%;
+    color: white; 
+}
