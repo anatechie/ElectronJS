@@ -1,0 +1,50 @@
+/*Todo o documento recebe: */
+*{
+    margin: 0;
+
+    /*espaçamento interno*/
+    padding: 0;
+    /*Ajuda a calcular o melhor o tamanho do espaçamento, mas não é visual*/
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey; /*ctrl espaço abre opção de cores*/
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+    /*cria margem embaixo do h1*/
+    margin-bottom: 20px;
+}
+
+.galeria{
+    /*deixa tudo da galeria flexivel*/
+    display: flex;
+    /*quebra linha se passar do limite da tela*/
+    flex-wrap: wrap;
+    /*centraliza tudo da galeria na tela*/
+    justify-content: center;
+    /*cria divisão entre imagens*/
+    gap:15px;
+}
+
+/*acessa imagens que tem dentro da div galeria*/
+.galeria img{
+    /*largura*/
+    width: 200px;
+    /*altura*/
+    height: 200px;
+    /*arredondar bordas*/
+    border-radius:10px;
+    /*coloca a mãozinha quando o mouse passa em cima da imagem*/
+    cursor: pointer;
+    /*tempo para executar o hover(efeito quando passa o mouse em cima)*/
+    transition: 0.3s;
+}
+
+.galeria img:hover{
+    /*aumenta o tamanho da imagem em 1,05*/
+    transform: scale(1.05);
+}
